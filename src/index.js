@@ -24,5 +24,6 @@ store.dispatch(toggleTodo(1));
 store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED));
 store.dispatch(addTodo("Learn react & redux"));
 store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ALL));
+store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED));
 // Stop listening to state updates
 unsubscribe();

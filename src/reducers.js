@@ -11,6 +11,7 @@ function visibilityFilter(state = SHOW_ALL, action) {
   switch (action.type) {
     case SET_VISIBILITY_FILTER:
       return action.filter;
+
     default:
       return state;
   }
@@ -23,7 +24,8 @@ function todos(state = [], action) {
         ...state,
         {
           text: action.text,
-          completed: false
+          completed: false,
+          active: true
         }
       ];
     case TOGGLE_TODO:
